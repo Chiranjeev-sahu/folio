@@ -1,4 +1,4 @@
-import { Database, type LucideIcon } from "lucide-react";
+import { Database, ShieldCheck, type LucideIcon } from "lucide-react";
 import type { IconType } from "react-icons";
 import {
   SiCss,
@@ -43,6 +43,7 @@ export type TechKey =
   | "postgres"
   | "mongo"
   | "neon"
+  | "zod"
   | "netlify"
   | "vercel";
 
@@ -164,6 +165,11 @@ export const techMap: Record<TechKey, TechMeta> = {
     icon: Database,
     iconClassName: "text-[#00E599] dark:text-[#5eead4]",
   },
+  zod: {
+    label: "Zod",
+    icon: ShieldCheck,
+    iconClassName: "text-blue-500 dark:text-blue-400",
+  },
   netlify: {
     label: "Netlify",
     icon: SiNetlify,
@@ -196,47 +202,35 @@ export const iconMap: Record<TechKey, TechIcon> = {
   postgres: techMap.postgres.icon,
   mongo: techMap.mongo.icon,
   neon: techMap.neon.icon,
+  zod: techMap.zod.icon,
   netlify: techMap.netlify.icon,
   vercel: techMap.vercel.icon,
 };
 
 export const projects: Project[] = [
   {
-    slug: "",
-    title: "VengenceUI",
-    imageTitle: "Landing Page",
-    src: "/projects/relay-dark.png",
-    lightModeSrc: "/projects/relay-light.png",
+    slug: "scribe",
+    title: "Scribe",
+    imageTitle: "Blog platform",
+    src: "/projects/scribe-dark.png",
+    lightModeSrc: "/projects/scribe-light.png",
     description:
-      "VengenceUI helps you build landing pages with animated, beautiful components.",
-    tech: ["next", "react", "ts", "tailwind", "motion"],
-    github: "https://github.com/Ashutoshx7/VengeanceUI",
-    live: "https://www.vengenceui.com/",
+      "A minimalist, high-performance blogging engine with sleek UI and tasteful microinteractions",
+    tech: [
+      "ts",
+      "react",
+      "node",
+      "express",
+      "tailwind",
+      "motion",
+      "zod",
+      "eslint",
+      "tanstack",
+    ],
+    github: "https://github.com/Chiranjeev-sahu/Scribe",
+    live: "https://scriibe.netlify.app/",
   },
-  {
-    slug: "relay",
-    title: "Relay",
-    imageTitle: "API Workspace",
-    src: "/projects/relay-dark.png",
-    lightModeSrc: "/projects/relay-light.png",
-    description:
-      "A collaborative API testing toolkit for teams that want fast request flows.",
-    tech: ["next", "react", "ts", "tailwind", "node"],
-    github: "https://github.com/chiranjeev-kumar/relay",
-    live: "https://relay.example.com/",
-  },
-  {
-    slug: "relay",
-    title: "Relay2",
-    imageTitle: "API Workspace",
-    src: "/projects/relay-dark.png",
-    lightModeSrc: "/projects/relay-light.png",
-    description:
-      "A collaborative API testing toolkit for teams that want fast request flows.",
-    tech: ["next", "react", "ts", "tailwind", "node"],
-    github: "https://github.com/chiranjeev-kumar/relay",
-    live: "https://relay.example.com/",
-  },
+
   {
     slug: "relay",
     title: "Relay3",
@@ -245,8 +239,8 @@ export const projects: Project[] = [
     lightModeSrc: "/projects/relay-light.png",
     description:
       "A collaborative API testing toolkit for teams that want fast request flows.",
-    tech: ["next", "react", "ts", "tailwind", "node"],
-    github: "https://github.com/chiranjeev-kumar/relay",
-    live: "https://relay.example.com/",
+    tech: ["ts", "node", "express", "prisma", "postgres", "zod", "eslint"],
+    github: "https://github.com/Chiranjeev-sahu/Relay",
+    live: "https://relay-omega-roan.vercel.app",
   },
 ];
