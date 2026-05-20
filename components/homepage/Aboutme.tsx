@@ -7,7 +7,7 @@ export const AboutMe = () => {
     <>
       <div className="w-full px-6 py-2 lg:w-[46%]">
         <h3 className="font-jetbrains font-extralight text-sm md:text-base antialiased tracking-tighter ">
-          Hi! I&apos;m{" "}
+          Hey! I&apos;m{" "}
           <span className="italic underline font-medium underline-offset-2">
             Chiranjeev
           </span>

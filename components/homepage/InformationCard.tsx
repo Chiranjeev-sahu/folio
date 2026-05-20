@@ -1,6 +1,7 @@
 import Image from "next/image";
 // import profile from "./profile.jpg";
-import profile from "@/public/profile.jpg";
+// import profile from "@/public/profile.jpg";
+import profile from "@/public/bruce.jpg";
 import { CustomToggle } from "@/components/custom-theme-switcher";
 export const InfoCard = () => {
   return (
