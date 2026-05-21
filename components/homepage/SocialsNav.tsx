@@ -52,7 +52,7 @@ export const Socials = () => {
         <h3 className="text-xl font-bold font-jetbrains md:hidden tracking-tight">
           My socials
         </h3>
-        <nav className="flex flex-wrap gap-3">
+        <nav className="flex flex-wrap md:justify-between md:w-full gap-3">
           {socials.map(
             ({ href, label, icon: Icon, iconClassName, darkShadowClass }) => (
               <a
