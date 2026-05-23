@@ -24,7 +24,7 @@ export const Projects = () => {
 
           return (
             <Fragment key={`${project.slug}-${index}`}>
-              <div className="p-4">
+              <div className="p-4 flex">
                 <ProjectCard project={project} />
               </div>
 
