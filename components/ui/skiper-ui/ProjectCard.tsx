@@ -9,7 +9,7 @@ type ProjectCardProps = {
 
 export const ProjectCard = ({ project }: ProjectCardProps) => {
   return (
-    <div className="flex w-full gap-3 md:flex-col">
+    <div className="flex w-full h-full gap-3 md:flex-col">
       <div className="w-[48%] shrink-0 bg-background p-2 rounded-sm border border-color [box-shadow:inset_3px_3px_6px_#d1d1d1,inset_-1px_-1px_2px_#d1d1d1] dark:[box-shadow:inset_2px_2px_6px_#222222,inset_-2px_-2px_4px_#121212] md:w-full">
         <div className="relative aspect-4/3 w-full overflow-hidden rounded-sm border shadow-[1px_2px_3px_var(--border-color)] md:aspect-video">
           <Image
@@ -42,10 +42,12 @@ export const ProjectCard = ({ project }: ProjectCardProps) => {
           {project.description}
         </p>
 
-        <div className="flex justify-between">
+        <div className="flex justify-between mt-auto">
           <div className="flex flex-wrap gap-0">
             {project.tech.map((tech) => {
-              const { icon: Icon, iconClassName, label } = techMap[tech];
+              const techInfo = techMap[tech];
+              if (!techInfo) return null;
+              const { icon: Icon, iconClassName, label } = techInfo;
 
               return (
                 <span
@@ -59,7 +61,7 @@ export const ProjectCard = ({ project }: ProjectCardProps) => {
             })}
           </div>
 
-          <div className="mt-auto flex gap-2">
+          <div className="flex gap-2">
             <a
               href={project.github}
               target="_blank"
