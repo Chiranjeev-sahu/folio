@@ -484,8 +484,6 @@ export const useThemeToggle = ({
   }, []);
 
   const toggleTheme = useCallback(() => {
-    setIsDark(!isDark);
-
     const animation = createAnimation(variant, start, blur, gifUrl);
 
     updateStyles(animation.css, animation.name);
@@ -502,21 +500,9 @@ export const useThemeToggle = ({
     }
 
     document.startViewTransition(switchTheme);
-  }, [
-    theme,
-    setTheme,
-    variant,
-    start,
-    blur,
-    gifUrl,
-    updateStyles,
-    isDark,
-    setIsDark,
-  ]);
+  }, [setTheme, variant, start, blur, gifUrl, updateStyles, isDark, setIsDark]);
 
   const setCrazyLightTheme = useCallback(() => {
-    setIsDark(false);
-
     const animation = createAnimation(variant, start, blur, gifUrl);
 
     updateStyles(animation.css, animation.name);
@@ -536,8 +522,6 @@ export const useThemeToggle = ({
   }, [setTheme, variant, start, blur, gifUrl, updateStyles, setIsDark]);
 
   const setCrazyDarkTheme = useCallback(() => {
-    setIsDark(true);
-
     const animation = createAnimation(variant, start, blur, gifUrl);
 
     updateStyles(animation.css, animation.name);
@@ -559,12 +543,6 @@ export const useThemeToggle = ({
   const setCrazySystemTheme = useCallback(() => {
     if (typeof window === "undefined") return;
 
-    // Check system preference for dark mode
-    const prefersDark = window.matchMedia(
-      "(prefers-color-scheme: dark)",
-    ).matches;
-    setIsDark(prefersDark);
-
     const animation = createAnimation(variant, start, blur, gifUrl);
 
     updateStyles(animation.css, animation.name);
@@ -583,7 +561,6 @@ export const useThemeToggle = ({
 
   return {
     isDark,
-    setIsDark,
     toggleTheme,
     setCrazyLightTheme,
     setCrazyDarkTheme,
