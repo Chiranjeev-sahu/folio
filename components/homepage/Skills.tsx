@@ -39,10 +39,10 @@ export const Skills = () => {
                   <span
                     key={tech}
                     title={label}
-                    className="inline-flex items-center gap-1 rounded-xl [box-shadow:inset_2px_2px_4px_#d1d1d1] border pointer-events-none border-black/10 bg-accent dark:bg-background dark:[box-shadow:inset_0px_1px_2px_#626262] px-2 py-1 text-xs text-zinc-800 dark:text-zinc-100 dark:border-white/5"
+                    className="inline-flex items-center gap-1 rounded-xl [box-shadow:inset_2px_2px_2px_#d9d9d9,inset_-4px_-4px_4px_#ffffff] border pointer-events-none border-black/10 bg-background/90 dark:bg-background dark:[box-shadow:inset_0px_1px_2px_#727272] px-2 py-1 text-xs text-zinc-800 dark:text-zinc-100 dark:border-none"
                   >
                     <Icon
-                      className={`size-4 shrink-0 ${iconClassName}`}
+                      className={`size-3 shrink-0 ${iconClassName}`}
                       aria-hidden
                     />
                     <span className="font-jetbrains">{label}</span>
@@ -52,9 +52,7 @@ export const Skills = () => {
             </div>
           </div>
 
-          {index < Object.entries(skills).length - 1 && (
-            <HorizontalDivider />
-          )}
+          {index < Object.entries(skills).length - 1 && <HorizontalDivider />}
         </Fragment>
       ))}
     </section>
