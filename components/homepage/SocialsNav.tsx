@@ -6,7 +6,7 @@ const baseLinkClass =
   "inline-flex items-center gap-1 rounded-xl border text-sm border dark:border-accent/80 font-jetbrains  bg-background p-2 py-1 text-foreground/80 no-underline transition-all duration-200 hover:-translate-y-0.5";
 
 const lightShadowClass =
-  "[box-shadow:inset_2px_2px_2px_#d9d9d9,inset_-4px_-4px_4px_#ffffff]";
+  "[box-shadow:inset_2px_2px_2px_#e6e6e6,inset_0px_-4px_4px_#ffffff]";
 
 const socials: {
   href: string;
