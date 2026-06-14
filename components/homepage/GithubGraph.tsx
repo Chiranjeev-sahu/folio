@@ -60,11 +60,11 @@ export default async function GithubGraph() {
   const totalContributions: number = calendar?.totalContributions || 0;
 
   const getColor = (count: number) => {
-    if (count === 0) return "bg-olive-200/60 dark:bg-[#1a1a1a]";
-    if (count <= 3) return "bg-olive-300 dark:bg-neutral-700";
-    if (count <= 6) return "bg-olive-400 dark:bg-neutral-600";
-    if (count <= 9) return "bg-olive-500 dark:bg-neutral-400";
-    return "bg-olive-600 dark:bg-neutral-200";
+    if (count === 0) return "bg-olive-200/60 dark:bg-[#131313]";
+    if (count <= 3) return "bg-olive-300 dark:bg-green-950";
+    if (count <= 6) return "bg-olive-400 dark:bg-green-900";
+    if (count <= 9) return "bg-olive-500 dark:bg-green-600";
+    return "bg-olive-600 dark:bg-green-400";
   };
 
   const getMonthLabels = () => {
@@ -119,13 +119,13 @@ export default async function GithubGraph() {
 
       <div className="grid w-full grid-cols-53 gap-x-0.5">
         {weeks.map((week, colIndex) => (
-          <div key={colIndex} className="flex flex-col gap-0.5">
+          <div key={colIndex} className="flex flex-col gap-1">
             {colIndex === 0 &&
               Array.from({ length: 7 - week.contributionDays.length }).map(
                 (_, i) => (
                   <div
                     key={`empty-top-${i}`}
-                    className="w-full aspect-square rounded-[1px] sm:rounded-xs bg-transparent"
+                    className="w-full aspect-square rounded-sm bg-transparent"
                   />
                 ),
               )}
@@ -133,7 +133,7 @@ export default async function GithubGraph() {
             {week.contributionDays.map((day, rowIndex) => (
               <div
                 key={rowIndex}
-                className={`w-full aspect-square rounded-[1px] sm:rounded-xs ${getColor(
+                className={`w-full aspect-square rounded-sm ${getColor(
                   day.contributionCount,
                 )}`}
                 title={`${day.contributionCount} contributions on ${day.date}`}
@@ -146,7 +146,7 @@ export default async function GithubGraph() {
                 (_, i) => (
                   <div
                     key={`empty-bottom-${i}`}
-                    className="w-full aspect-square rounded-[1px] sm:rounded-xs bg-transparent"
+                    className="w-full aspect-square rounded-sm bg-transparent"
                   />
                 ),
               )}
@@ -160,11 +160,11 @@ export default async function GithubGraph() {
         </span>
         <div className="flex items-center gap-1.5">
           <span className="text-[11px] text-zinc-500 mr-1">Less</span>
-          <div className="w-2.5 h-2.5 rounded-xs bg-olive-100 dark:bg-[#1a1a1a]" />
-          <div className="w-2.5 h-2.5 rounded-xs bg-olive-300 dark:bg-neutral-700" />
-          <div className="w-2.5 h-2.5 rounded-xs bg-olive-400 dark:bg-neutral-600" />
-          <div className="w-2.5 h-2.5 rounded-xs bg-olive-500 dark:bg-neutral-400" />
-          <div className="w-2.5 h-2.5 rounded-xs bg-olive-600 dark:bg-neutral-200" />
+          <div className="w-2.5 h-2.5 rounded-lg bg-olive-200/60 dark:bg-[#1a1a1a]" />
+          <div className="w-2.5 h-2.5 rounded-lg bg-olive-300 dark:bg-green-950" />
+          <div className="w-2.5 h-2.5 rounded-lg bg-olive-400 dark:bg-green-900" />
+          <div className="w-2.5 h-2.5 rounded-lg bg-olive-500 dark:bg-green-600" />
+          <div className="w-2.5 h-2.5 rounded-lg bg-olive-600 dark:bg-green-400" />
           <span className="text-[11px] text-zinc-500 ml-1">More</span>
         </div>
       </div>

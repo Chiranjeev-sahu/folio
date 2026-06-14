@@ -7,15 +7,16 @@ export const AboutMe = () => {
     <>
       <div className="w-full px-6 py-2 lg:w-[60%]">
         <h3 className="font-jetbrains font-extralight text-sm md:text-base antialiased tracking-tighter ">
-          Hey! I&apos;m{" "}
+          Sup! I&apos;m{" "}
           <span className="italic underline font-medium underline-offset-2">
             Chiranjeev
           </span>
-          ,full-stack developer who loves{" "}
-          <span className="font-normal">
-            to build, break, fix, polish, and ship{" "}
-          </span>
-          real working products.
+          , a full-stack developer obsessed with{" "}
+          <span className="font-normal text-bold">
+            building, breaking, fixing, polishing,
+          </span>{" "}
+          and <span className="font-normal text-bold"> shipping</span>{" "}
+          real-world products.
           <br />
           <br />I thrive on building{" "}
           <span className="font-normal">practical systems</span> with{" "}
