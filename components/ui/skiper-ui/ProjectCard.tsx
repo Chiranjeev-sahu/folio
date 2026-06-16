@@ -10,8 +10,8 @@ type ProjectCardProps = {
 export const ProjectCard = ({ project }: ProjectCardProps) => {
   return (
     <div className="flex w-full h-full gap-3 md:flex-col">
-      <div className="w-[48%] shrink-0 bg-background p-2 rounded-sm border border-color [box-shadow:inset_3px_3px_6px_#d1d1d1,inset_-1px_-1px_2px_#d1d1d1] dark:[box-shadow:inset_2px_2px_6px_#222222,inset_-2px_-2px_4px_#121212] md:w-full">
-        <div className="relative aspect-4/3 w-full overflow-hidden rounded-sm border shadow-[1px_2px_3px_var(--border-color)] md:aspect-video">
+      <div className="w-[48%] shrink-0 bg-background p-1 rounded-sm border border-color  md:w-full">
+        <div className="relative aspect-4/3 w-full overflow-hidden rounded-sm border  md:aspect-video">
           <Image
             src={project.lightModeSrc}
             alt={`${project.title} ${project.imageTitle}`}
