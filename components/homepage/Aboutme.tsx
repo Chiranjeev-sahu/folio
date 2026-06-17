@@ -5,7 +5,7 @@ const stack: TechKey[] = ["next", "node", "prisma", "express", "ts"];
 export const AboutMe = () => {
   return (
     <>
-      <div className="w-full px-6 py-2 lg:w-[46%]">
+      <div className="w-full px-6 py-2 lg:w-[60%]">
         <h3 className="font-jetbrains font-extralight text-sm md:text-base antialiased tracking-tighter ">
           Hey! I&apos;m{" "}
           <span className="italic underline font-medium underline-offset-2">
@@ -32,7 +32,7 @@ export const AboutMe = () => {
                 <span key={tech}>
                   <span className="inline-flex items-center gap-1 align-middle whitespace-nowrap">
                     <Icon
-                      className={`size-4 shrink-0 ${techMap[tech].iconClassName}`}
+                      className={`size-3 md:size-4 shrink-0 ${techMap[tech].iconClassName}`}
                     />
                     <span>{techMap[tech].label}</span>
                   </span>

@@ -5,7 +5,7 @@ import { ProjectCard } from "../ui/skiper-ui/ProjectCard";
 
 export const Projects = () => {
   return (
-    <section className="flex w-full flex-col lg:w-[46%]">
+    <section className="flex w-full flex-col lg:w-[60%]">
       <div className="p-6 pb-4">
         <h3 className="text-xl font-bold font-jetbrains tracking-tight">
           Projects

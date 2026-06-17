@@ -6,7 +6,7 @@ const baseLinkClass =
   "inline-flex items-center gap-1 rounded-xl border text-sm border dark:border-accent/80 font-jetbrains  bg-background p-2 py-1 text-foreground/80 no-underline transition-all duration-200 hover:-translate-y-0.5";
 
 const lightShadowClass =
-  "[box-shadow:inset_2px_2px_2px_#e6e6e6,inset_0px_-4px_4px_#ffffff]";
+  "[box-shadow:inset_2px_2px_2px_#e6e6e6,inset_0px_-2px_0px_#ffffff]";
 
 const socials: {
   href: string;
@@ -55,7 +55,7 @@ const socials: {
 export const Socials = () => {
   return (
     <>
-      <div className="w-full px-6 py-2 lg:w-[46%] flex flex-col sm:flex-row sm:justify-between gap-3">
+      <div className="w-full px-6 py-2 lg:w-[60%] flex flex-col sm:flex-row sm:justify-between gap-3">
         <h3 className="text-xl font-bold font-jetbrains md:hidden tracking-tight">
           My socials:
         </h3>

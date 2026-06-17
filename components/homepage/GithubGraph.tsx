@@ -102,7 +102,7 @@ export default async function GithubGraph() {
   const monthLabels = getMonthLabels();
 
   return (
-    <section className="flex w-full flex-col gap-3 px-4 py-3 font-jetbrains lg:w-[46%]">
+    <section className="flex w-full flex-col gap-3 px-4 py-3 font-jetbrains lg:w-[60%]">
       <div className="w-full">
         <div className="grid w-full grid-cols-53 gap-x-0.5 text-zinc-500">
           {monthLabels.map(({ label, columnStart }) => (

@@ -5,10 +5,10 @@ import profile from "@/public/bruce.jpg";
 import { CustomToggle } from "@/components/custom-theme-switcher";
 export const InfoCard = () => {
   return (
-    <section className="flex w-full flex-wrap items-start justify-between gap-3 p-4 py-2 lg:w-[46%]">
+    <section className="flex w-full  items-start justify-between gap-3 p-4 py-2 lg:w-[60%]">
       <div className="flex min-w-0 gap-3">
-        <div className="bg-background p-2 rounded-sm border border-color [box-shadow:inset_3px_3px_6px_#d1d1d1,inset_-1px_-1px_2px_#d1d1d1] dark:[box-shadow:inset_2px_2px_6px_#222222,inset_-2px_-2px_4px_#121212]">
-          <div className="relative w-25 border  aspect-square shadow-[1px_2px_3px_var(--border-color)] rounded-sm overflow-hidden">
+        <div className="bg-background p-1 rounded-full border border-color [box-shadow:inset_3px_3px_6px_#d1d1d1,inset_-1px_-1px_2px_#d1d1d1] dark:[box-shadow:inset_0px_0px_0px_#222222,inset_-2px_-2px_4px_#121212]">
+          <div className="relative w-25 md:w-40 border  aspect-square shadow-[1px_2px_3px_var(--border-color)] dark:shadow-none rounded-full overflow-hidden">
             <Image
               src={profile}
               alt="Profile picture"

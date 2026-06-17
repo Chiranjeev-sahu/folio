@@ -17,7 +17,7 @@ const skills: Record<string, TechKey[]> = {
 };
 export const Skills = () => {
   return (
-    <section className="flex w-full flex-col lg:w-[46%]">
+    <section className="flex w-full flex-col lg:w-[60%]">
       <div className="p-6 pb-4">
         <h3 className="text-xl font-bold font-jetbrains tracking-tight">
           Skills
@@ -39,7 +39,7 @@ export const Skills = () => {
                   <span
                     key={tech}
                     title={label}
-                    className="inline-flex items-center gap-1 rounded-xl [box-shadow:inset_2px_2px_2px_#e6e6e6,inset_0px_-4px_4px_#ffffff] border pointer-events-none border-black/10 bg-background/90 dark:bg-background dark:[box-shadow:inset_0px_1px_2px_#727272] px-2 py-1 text-xs text-zinc-800 dark:text-zinc-100 dark:border-none"
+                    className="inline-flex items-center gap-1 rounded-xl [box-shadow:inset_2px_2px_2px_#e6e6e6,inset_0px_-2px_0px_#ffffff] border pointer-events-none border-black/10 dark:border-accent bg-background/90 dark:bg-background dark:[box-shadow:inset_0px_1px_2px_#727272] px-2 py-1 text-xs text-zinc-800 dark:text-zinc-100 "
                   >
                     <Icon
                       className={`size-3 shrink-0 ${iconClassName}`}

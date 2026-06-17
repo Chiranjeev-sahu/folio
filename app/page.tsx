@@ -15,7 +15,7 @@ export default function Home() {
     <div className="min-h-screen w-full bg-background relative flex flex-col items-center overflow-x-hidden">
       {/* Left vertical line: 8px from edge on mobile, 30% on large */}
       <div
-        className="absolute top-0 bottom-0 left-2 lg:left-[27%] w-0 border-r border-black/30 dark:border-white/15 pointer-events-none"
+        className="absolute top-0 bottom-0 left-2 lg:left-[20%] w-0 border-r border-black/30 dark:border-white/15 pointer-events-none"
         style={{
           maskImage:
             "repeating-linear-gradient(to bottom, black 0, black 5px, transparent 5px, transparent 12px)",
@@ -25,7 +25,7 @@ export default function Home() {
       />
       {/* Right vertical line */}
       <div
-        className="absolute top-0 bottom-0 right-2 lg:right-[27%] w-0 border-r border-black/30 dark:border-white/15 pointer-events-none"
+        className="absolute top-0 bottom-0 right-2 lg:right-[20%] w-0 border-r border-black/30 dark:border-white/15 pointer-events-none"
         style={{
           maskImage:
             "repeating-linear-gradient(to bottom, black 0, black 5px, transparent 5px, transparent 12px)",

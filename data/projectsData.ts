@@ -1,4 +1,4 @@
-import { Database, ShieldCheck, type LucideIcon } from "lucide-react";
+import { Database, type LucideIcon } from "lucide-react";
 import type { IconType } from "react-icons";
 import {
   SiCss,
@@ -21,6 +21,7 @@ import {
   SiTypescript,
   SiVercel,
   SiCplusplus,
+  SiZod,
 } from "react-icons/si";
 
 export type TechKey =
@@ -167,7 +168,7 @@ export const techMap: Record<TechKey, TechMeta> = {
   },
   zod: {
     label: "Zod",
-    icon: ShieldCheck,
+    icon: SiZod,
     iconClassName: "text-blue-500 dark:text-blue-400",
   },
   netlify: {

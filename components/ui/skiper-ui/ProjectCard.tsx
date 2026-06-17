@@ -10,8 +10,8 @@ type ProjectCardProps = {
 export const ProjectCard = ({ project }: ProjectCardProps) => {
   return (
     <div className="flex w-full h-full gap-3 md:flex-col">
-      <div className="w-[48%] shrink-0 bg-background p-1 rounded-sm border border-color  md:w-full">
-        <div className="relative aspect-4/3 w-full overflow-hidden rounded-sm border  md:aspect-video">
+      <div className="w-[48%] shrink-0 bg-background p-1 rounded-sm border border-color [box-shadow:inset_3px_3px_6px_#d1d1d1,inset_-1px_-1px_2px_#d1d1d1] dark:[box-shadow:inset_1px_1px_2px_#202020] md:w-full">
+        <div className="relative aspect-4/4 sm:aspect-4/3 w-full overflow-hidden rounded-sm border shadow-[1px_1px_2px_var(--border-color)] md:aspect-video">
           <Image
             src={project.lightModeSrc}
             alt={`${project.title} ${project.imageTitle}`}
@@ -55,7 +55,10 @@ export const ProjectCard = ({ project }: ProjectCardProps) => {
                   title={label}
                   className="inline-flex size-5 items-center justify-center rounded-sm  bg-background text-muted-foreground dark:border-white/10"
                 >
-                  <Icon className={`size-3 ${iconClassName}`} aria-hidden />
+                  <Icon
+                    className={`size-3 sm:size-4 ${iconClassName}`}
+                    aria-hidden
+                  />
                 </span>
               );
             })}
