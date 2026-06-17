@@ -60,11 +60,11 @@ export default async function GithubGraph() {
   const totalContributions: number = calendar?.totalContributions || 0;
 
   const getColor = (count: number) => {
-    if (count === 0) return "bg-zinc-200/60 dark:bg-[#1a1a1a]";
-    if (count <= 3) return "bg-zinc-300 dark:bg-zinc-700";
-    if (count <= 6) return "bg-zinc-400 dark:bg-zinc-600";
-    if (count <= 9) return "bg-zinc-500 dark:bg-zinc-400";
-    return "bg-zinc-600 dark:bg-zinc-200";
+    if (count === 0) return "bg-olive-200/60 dark:bg-[#1a1a1a]";
+    if (count <= 3) return "bg-olive-300 dark:bg-neutral-700";
+    if (count <= 6) return "bg-olive-400 dark:bg-neutral-600";
+    if (count <= 9) return "bg-olive-500 dark:bg-neutral-400";
+    return "bg-olive-600 dark:bg-neutral-200";
   };
 
   const getMonthLabels = () => {
@@ -160,11 +160,11 @@ export default async function GithubGraph() {
         </span>
         <div className="flex items-center gap-1.5">
           <span className="text-[11px] text-zinc-500 mr-1">Less</span>
-          <div className="w-2.5 h-2.5 rounded-xs bg-zinc-100 dark:bg-[#1a1a1a]" />
-          <div className="w-2.5 h-2.5 rounded-xs bg-zinc-300 dark:bg-zinc-700" />
-          <div className="w-2.5 h-2.5 rounded-xs bg-zinc-400 dark:bg-zinc-600" />
-          <div className="w-2.5 h-2.5 rounded-xs bg-zinc-500 dark:bg-zinc-400" />
-          <div className="w-2.5 h-2.5 rounded-xs bg-zinc-600 dark:bg-zinc-200" />
+          <div className="w-2.5 h-2.5 rounded-xs bg-olive-100 dark:bg-[#1a1a1a]" />
+          <div className="w-2.5 h-2.5 rounded-xs bg-olive-300 dark:bg-neutral-700" />
+          <div className="w-2.5 h-2.5 rounded-xs bg-olive-400 dark:bg-neutral-600" />
+          <div className="w-2.5 h-2.5 rounded-xs bg-olive-500 dark:bg-neutral-400" />
+          <div className="w-2.5 h-2.5 rounded-xs bg-olive-600 dark:bg-neutral-200" />
           <span className="text-[11px] text-zinc-500 ml-1">More</span>
         </div>
       </div>
