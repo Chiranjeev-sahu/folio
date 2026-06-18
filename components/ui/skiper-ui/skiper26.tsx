@@ -1095,7 +1095,7 @@ export const createAnimation = (
       name: `${variant}-${start}${blur ? "-blur" : ""}`,
       css: `
        ::view-transition-group(root) {
-        animation-duration: 1s;
+        animation-duration: 0.7s;
         animation-timing-function: var(--expo-out);
       }
 
