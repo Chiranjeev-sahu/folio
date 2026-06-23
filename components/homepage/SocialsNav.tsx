@@ -21,7 +21,7 @@ const socials: {
     icon: FaLinkedin,
     iconClassName: "text-[#0A66C2] dark:text-[#3b82f6]",
     darkShadowClass:
-      "dark:[box-shadow:inset_2px_2px_2px_#292929,inset_0px_-2px_0px_#525252]",
+      "dark:[box-shadow:inset_2px_2px_2px_#151515,inset_0px_-2px_0px_#424242]",
   },
   {
     href: "https://github.com/Chiranjeev-sahu",
@@ -29,7 +29,7 @@ const socials: {
     icon: FaGithub,
     iconClassName: "text-zinc-800 dark:text-zinc-100",
     darkShadowClass:
-      "dark:[box-shadow:inset_2px_2px_2px_#292929,inset_0px_-2px_0px_#525252]",
+      "dark:[box-shadow:inset_2px_2px_2px_#151515,inset_0px_-2px_0px_#424242]",
   },
   {
     href: "https://x.com/chiruexe",
@@ -37,7 +37,7 @@ const socials: {
     icon: FaXTwitter,
     iconClassName: "text-zinc-900 dark:text-zinc-100",
     darkShadowClass:
-      "dark:[box-shadow:inset_2px_2px_2px_#292929,inset_0px_-2px_0px_#525252]",
+      "dark:[box-shadow:inset_2px_2px_2px_#151515,inset_0px_-2px_0px_#424242]",
   },
   {
     href: "mailto:chiranjeevsahu1904@gmail.com",
@@ -45,7 +45,7 @@ const socials: {
     icon: FaEnvelope,
     iconClassName: "text-zinc-900 dark:text-zinc-100",
     darkShadowClass:
-      "dark:[box-shadow:inset_2px_2px_2px_#292929,inset_0px_-2px_0px_#525252]",
+      "dark:[box-shadow:inset_2px_2px_2px_#151515,inset_0px_-2px_0px_#424242]",
   },
   {
     href: "mailto:chiranjeevsahu1904@gmail.com",
@@ -53,7 +53,7 @@ const socials: {
     icon: FaRegFileAlt,
     iconClassName: "text-zinc-900 dark:text-zinc-100",
     darkShadowClass:
-      "dark:[box-shadow:inset_2px_2px_2px_#292929,inset_0px_-2px_0px_#525252]",
+      "dark:[box-shadow:inset_2px_2px_2px_#151515,inset_0px_-2px_0px_#424242]",
   },
 ];
 
